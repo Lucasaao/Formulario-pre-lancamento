@@ -1,0 +1,70 @@
+<html lang='pt-br'>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Formulário de lançamento</title>
+  </head>
+  <body>
+    <h1 id='title'>Pré-lançamento</h1>
+    <p id='description'>Obrigado por nos doar seu tempo para entregarmos o melhor à vocês</p>
+    <form id='survey-form' method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id='name-label' for='name'>Nome:<input id='name' placeholder=' Digite seu nome' required/></label>
+      </fieldset>
+      <fieldset>
+        <label id='email-label' for='email'>E-mail:<input type='email' id='email' placeholder=' Digite seu e-mail' required/></label>
+      </fieldset>
+      <fieldset>
+        <label id='number-label' for='number'>Idade:<input type='number' id='number' min='18' max='120' placeholder=' Idade' required/></label>
+      </fieldset>
+      <fieldset>
+        <label>Modelo do veículo testado:
+          <select id='dropdown' required>
+            <option value=''>(Escolha uma opção)</option>
+            <option value='1'>Osiris</option>
+            <option value='2'>Hotus</option>
+            <option value='3'>Hathor</option>
+            <option value='4'>Anubis</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        Versão:
+        <label><input class='inline' name='version' type="radio" value='1' checked />LM</label>
+        <label><input class='inline' name='version' type="radio" value='2' />H+</label>
+      </fieldset>
+      <fieldset>
+        Cambio:
+        <label><input class='inline' name='gear-shift' type="radio" value='1' checked />Manual</label>
+        <label><input class='inline' name='gear-shift' type="radio" value='2' />Automático</label>
+      </fieldset>
+      <fieldset>Principais características:
+        <label>
+          <input class='inline' value='1' type="checkbox"/>Conforto
+        </label>
+        <label>
+          <input class='inline' value='2' type="checkbox"/>Performance
+        </label>
+        <label>
+          <input class='inline' value='3' type="checkbox"/>Design
+        </label>
+        <label>
+          <input class='inline' value='4' type="checkbox"/>Alta qualidade
+        </label>
+        <label>
+          <input class='inline' value='5' type="checkbox"/>Tecnologia
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Onde melhorar? (opcional)
+          <textarea placeholder='potência, estabilidade...'></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for='submit'>
+          <input type='submit' id='submit'/>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
